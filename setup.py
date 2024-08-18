@@ -9,6 +9,5 @@ setup(
         "types",
     ],
     namespace_packages=["src"],
-    package_dir={"src": "src"},
     classifiers=["Framework :: Django"],
 )
