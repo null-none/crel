@@ -51,10 +51,15 @@ _common_safe_attribute_names: FrozenSet[str] = frozenset(
         "colspan",
         "content",
         "contenteditable",
+        "d",
+        "data-index",
+        "data-format",
         "dir",
+        "disabled",
         "draggable",
         "enctype",
         "for",
+        "fill",
         "height",
         "hidden",
         "href",
@@ -64,6 +69,7 @@ _common_safe_attribute_names: FrozenSet[str] = frozenset(
         "itemprop",
         "itemscope",
         "itemtype",
+        "label",
         "lang",
         "loadable",
         "method",
@@ -80,7 +86,9 @@ _common_safe_attribute_names: FrozenSet[str] = frozenset(
         "poster",
         "property",
         "rel",
+        "required",
         "rowspan",
+        "selected",
         "sizes",
         "spellcheck",
         "src",
@@ -89,7 +97,9 @@ _common_safe_attribute_names: FrozenSet[str] = frozenset(
         "title",
         "type",
         "value",
+        "viewBox",
         "width",
+        "xmlns"
     }
 )
 
@@ -212,7 +222,7 @@ html = Tag("html")
 i = Tag("i")
 iframe = Tag("iframe", True)
 img = Tag("img", True)
-input_ = Tag("input", True)
+inp = Tag("input", True)
 ins = Tag("ins")
 kbd = Tag("kbd")
 label = Tag("label")
@@ -234,6 +244,7 @@ ol = Tag("ol")
 optgroup = Tag("optgroup")
 option = Tag("option")
 p = Tag("p")
+path = Tag("path")
 param = Tag("param", True)
 picture = Tag("picture")
 pre = Tag("pre")
